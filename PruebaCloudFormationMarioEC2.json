@@ -1,0 +1,18 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "Plantilla de CloudFormation de Mario Alvaredo para una instancia EC2",
+  "Resources": {
+    "MyEC2Instance": {
+      "Type": "AWS::EC2::Instance",
+      "Properties": {
+        "ImageId": "ami-0ff8a91507f77f867",  
+        "InstanceType": "t2.micro",  
+        "KeyName": "ClavesMario.pem",  
+        "SecurityGroupIds": [
+          "sg-034f842b59cd0a871"  
+        ],
+        "SubnetId": "subnet-0085c865ca67040a0"  
+      }
+    }
+  }
+}
