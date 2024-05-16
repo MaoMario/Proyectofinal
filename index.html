@@ -8,54 +8,54 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <style>
        body {
-        font-family: helvetica;
-            background-image: url('https://img.freepik.com/foto-gratis/big-data-tecnologia-ciberespacio-motherboard-microchip-placa-circuito-computadora-procesador-luz-neon_90220-1198.jpg?w=1060&t=st=1715271649~exp=1715272249~hmac=a56e987ab96c2afa677493b57388d5e7528fb39e5d657888912d2ea29255a309');
+            font-family: Brush Script MT;
+            background-image: url('https://img.freepik.com/vector-gratis/fondo-futurista-tecnologia-degradada_23-2149122416.jpg');
             background-size: cover; 
             background-repeat: no-repeat; 
             margin: 20px; 
             padding: 0;
-            font-size: 18px; 
+            font-size: 30px; 
             line-height: 1.6;
         }
-        lead {
-            font-family: 'Roboto', sans-serif;
-            font-size: 180px; 
-        }
-        
-       
 
         header {
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: 18px; 
-            
-            background-color: #042342;
-            color: #a0dfdb;
+            background-color: #4a6989;
+            color: #070707;
             text-align: center;
-            padding: 80px 0;
+            padding: 1em;
+            margin-bottom: 20px;
             border-radius: 10px;
+            font-size: 60px; 
+           
         }
-        
 
         nav {
             background-color: #34495e;
             overflow: hidden;
+            font-size: 120px;
             border-radius: 10px;
-            font-family: helvetica;
         }
+       
 
         nav a {
-            color: #fff;
-            font-size: 24px;
-            padding: 20px;
+            float: left;
+            display: block;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 14px 16px;
             text-decoration: none;
+            font-size: 120px; 
+            border-radius: 10px;
         }
 
         nav a:hover {
             background-color: #2c3e50;
+            color: #fff;
+           
         }
 
         section {
-            padding: 40px;
+            padding: 20px;
             margin-bottom: 20px;
             background-color: rgba(255, 255, 255, 0.8); 
             border-radius: 10px;
@@ -64,14 +64,26 @@
 
         footer {
             background-color: #2c3e50;
-            color: #fff;
+            color: #ecf0f1;
             text-align: center;
-            padding: 40px 0;
+            padding: 1em;
             border-radius: 10px;
         }
 
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
         .social-icons img {
-            width: 40px;
+            width: 200px;
             margin: 0 10px;
             transition: transform 0.3s ease-in-out;
         }
@@ -80,25 +92,29 @@
             transform: scale(1.2);
         }
 
+        .contact-form label {
+            font-weight: bold;
+        }
+
         .contact-form input[type="text"],
         .contact-form textarea {
             width: 100%;
-            padding: 15px;
-            margin-bottom: 20px;
+            padding: 10px;
+            margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
 
         .contact-form textarea {
             resize: none;
-            height: 200px;
+            height: 150px;
         }
 
         .contact-form input[type="submit"] {
             background-color: #2c3e50;
             color: #fff;
             border: none;
-            padding: 15px 30px;
+            padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
         }
@@ -107,11 +123,16 @@
             background-color: #34495e;
         }
 
+        #map {
+            height: 400px;
+            width: 100%;
+            border-radius: 10px;
+        }
+
         .card {
             margin-bottom: 20px;
             border: none;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .card-title {
@@ -122,41 +143,30 @@
 
         .card-text {
             color: #6c757d;
-            font-size: 18px; 
+            font-size: 20px; 
             line-height: 1.5; 
         }
     </style>
 </head>
 <body>
     <header>
-        <h1 class="display-3">Megabytes Leganés</h1>
-        <p class="lead">Tu tienda de reparación de ordenadores de confianza</p>
-        
-        
+        <h1 class="display-4" style="color: #3498db; font-size: 120px;" >Megabytes Leganés</h1>
+        <h2 class="lead"  style="font-size: 60px;">Tu tienda de reparación de ordenadores de confianza</h2>
+        <img src="logo.jpg" class="img-fluid" alt="Tienda Megabytes Leganés">
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#servicios">Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#ubicacion">Ubicación</a>
-                </li>
-            </ul>
-            <div class="social-icons">
-                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/1024px-F_icon.svg.png" alt="Facebook"></a>
-                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram"></a>
-                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/640px-X_logo_2023.svg.png" alt="Twitter"></a>
-            </div>
-        </div>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#servicios" style="font-size: 60px;">Servicios</a>
+        <a class="navbar-brand" href="#contacto" style="font-size: 60px;">Contacto</a>
+        <a class="navbar-brand" href="#ubicacion" style="font-size: 60px;">Ubicación</a>
+        
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/1024px-F_icon.svg.png" alt="Facebook" style="width: 50px;"></a>
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram" style="width: 50px;"></a>
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/640px-X_logo_2023.svg.png" alt="Twitter" style="width: 50px;"></a>
     </nav>
 
     <div class="container">
+        
         <section id="servicios">
             <h2>Servicios</h2>
             <p>Ofrecemos una amplia gama de servicios de reparación de ordenadores, incluyendo:</p>
@@ -172,30 +182,34 @@
             <h2>Contacto</h2>
             <p>Estamos ubicados en Leganés. ¡Contáctanos para obtener ayuda con tus problemas informáticos!</p>
             <address>
-                Dirección: Calle cid, 123<br>
+                Dirección: Calle Ejemplo, 123<br>
                 Teléfono: 123-456-789<br>
-                Correo Electrónico: mario.alvaredo@luisvives.com
+                Correo Electrónico: info@megabytesleganes.com
             </address>
             
             <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="text" id="email" name="email" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Mensaje:</label>
-                    <textarea id="message" name="message" class="form-control" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Correo Electrónico:</label>
+                <input type="text" id="email" name="email" required><br>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea><br>
+                <input type="submit" value="Enviar">
             </form>
+        </section>
+
+        <section id="ubicacion">
+            <h2>Ubicación</h2>
+            
+            <div id="map"></div>
+            <script>
+               
+            </script>
         </section>
 
         <section id="noticias">
             <h2>Últimas Noticias</h2>
+            <!-- Sección de noticias -->
             <div class="card">
                 <div class="card-body">
                     <h3 class="card-title">WhatsApp ya permite a algunos usuarios utilizar su propio ChatGPT en la aplicación</h3>
@@ -208,12 +222,7 @@
                     <p class="card-text">Según informa el medio estadounidense Electreck, que cita un correo electrónico interno del fabricante, el recorte podría afectar a más de 14.000 empleados en todo el mundo</p>
                 </div>
             </div>
-        </section>
-
-        <section id="ubicacion">
-            <h2>Ubicación</h2>
-            <div id="map"></div>
-            <!-- El código del mapa iría aquí -->
+            <!-- Agregar más noticias según sea necesario -->
         </section>
     </div>
 
