@@ -26,7 +26,6 @@
             margin-bottom: 20px;
             border-radius: 10px;
             font-size: 60px; 
-           
         }
 
         nav {
@@ -35,7 +34,6 @@
             font-size: 120px;
             border-radius: 10px;
         }
-       
 
         nav a {
             float: left;
@@ -51,7 +49,6 @@
         nav a:hover {
             background-color: #2c3e50;
             color: #fff;
-           
         }
 
         section {
@@ -150,23 +147,22 @@
 </head>
 <body>
     <header>
-        <h1 class="display-4" style="color: #3498db; font-size: 120px;" >Megabytes Leganés</h1>
-        <h2 class="lead"  style="font-size: 60px;">Tu tienda de reparación de ordenadores de confianza</h2>
+        <h1 class="display-4" style="color: #3498db; font-size: 120px;">Megabytes Leganés</h1>
+        <h2 class="lead" style="font-size: 60px;">Tu tienda de reparación de ordenadores de confianza</h2>
         <img src="logo.jpg" class="img-fluid" alt="Tienda Megabytes Leganés">
+        <p id="ip-display" style="font-size: 40px; color: #fff;">Cargando IP...</p>
     </header>
 
     <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand" href="#servicios" style="font-size: 60px;">Servicios</a>
         <a class="navbar-brand" href="#contacto" style="font-size: 60px;">Contacto</a>
         <a class="navbar-brand" href="#ubicacion" style="font-size: 60px;">Ubicación</a>
-        
         <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/1024px-F_icon.svg.png" alt="Facebook" style="width: 50px;"></a>
         <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram" style="width: 50px;"></a>
         <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/640px-X_logo_2023.svg.png" alt="Twitter" style="width: 50px;"></a>
     </nav>
 
     <div class="container">
-        
         <section id="servicios">
             <h2>Servicios</h2>
             <p>Ofrecemos una amplia gama de servicios de reparación de ordenadores, incluyendo:</p>
@@ -200,29 +196,23 @@
 
         <section id="ubicacion">
             <h2>Ubicación</h2>
-            
             <div id="map"></div>
-            <script>
-               
-            </script>
         </section>
 
         <section id="noticias">
             <h2>Últimas Noticias</h2>
-            <!-- Sección de noticias -->
             <div class="card">
                 <div class="card-body">
                     <h3 class="card-title">WhatsApp ya permite a algunos usuarios utilizar su propio ChatGPT en la aplicación</h3>
-                    <p class="card-text">La inteligencia artificial generativa de la empresa, Meta AI, ya está disponible para varios internautas en Estados Unidos, África e India. También llega a Instagram y a Messenger</p>
+                    <p class="card-text">La inteligencia artificial generativa de la empresa, Meta AI, ya está disponible para varios internautas en Estados Unidos, África e India. También llega a Instagram y a Messenger.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
                     <h3 class="card-title">Tesla se prepara para despedir a 15.000 trabajadores en todo el mundo</h3>
-                    <p class="card-text">Según informa el medio estadounidense Electreck, que cita un correo electrónico interno del fabricante, el recorte podría afectar a más de 14.000 empleados en todo el mundo</p>
+                    <p class="card-text">Según informa el medio estadounidense Electreck, que cita un correo electrónico interno del fabricante, el recorte podría afectar a más de 14.000 empleados en todo el mundo.</p>
                 </div>
             </div>
-            <!-- Agregar más noticias según sea necesario -->
         </section>
     </div>
 
@@ -232,6 +222,19 @@
         </div>
     </footer>
 
+    <script>
+        // Utilizando fetch para obtener la IP de la API de ipify
+        fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                // Mostrar la IP en el elemento con id "ip-display"
+                document.getElementById('ip-display').textContent = `Hola mundo desde: ${data.ip}`;
+            })
+            .catch(error => {
+                console.error('Error al obtener la IP:', error);
+                document.getElementById('ip-display').textContent = 'No se pudo obtener la IP';
+            });
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
